@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+}
+
+/* ///////////////////////////GLOBAL */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 90px 25px;
+}
+section {
+  width: 330px;
+  height: 445px;
+  position: relative;
+}
+
+button {
+  position: absolute;
+  background-color: hsl(0, 0%, 95%);
+  color: hsla(0, 0%, 98%, 0);
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  top: 350px;
+  left: 50px;
+}
+
+picture {
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 50px;
+  left: 50px;
+}
+
+h1 {
+  position: absolute;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  top: 130px;
+  left: 50px;
+}
+p {
+  position: absolute;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: left;
+  width: 220px;
+  top: 200px;
+  left: 50px;
+}
+
+/* //////////////////////////// SEDANS */
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+/* //////////////////////////////////////SUVS */
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button {
+  color: hsl(184, 100%, 22%);
+}
+
+/* //////////////////////////////////////LUXURY */
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+/* //////////////////// MEDIA */
+
+@media screen and (min-width: 1000px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+}
